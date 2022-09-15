@@ -10,7 +10,9 @@
 <br/>
 <a href="Task1Quote">Task 1. Quote</a>
 <br>
-<a href="Task2MaxDigit">Task 2. Find Max digit</a>
+<a href="Task2MaxDigit">Task 2. Find Max number</a>
+<br>
+<a href="Task3MaxMinAvgDigit">Task 3. Find Max or Min or Avg number</a>
 
 </body>
 </html>

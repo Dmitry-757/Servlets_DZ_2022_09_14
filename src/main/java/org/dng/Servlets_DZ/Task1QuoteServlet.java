@@ -17,7 +17,7 @@ public class Task1QuoteServlet extends HttpServlet {
 //        out.println("<html><body>");
 //        out.println("<h1>" + message + "</h1>");
 //        out.println("</body></html>");
-        RequestDispatcher dispatcher = request.getServletContext().getRequestDispatcher("/Quote.jsp");
+        RequestDispatcher dispatcher = request.getServletContext().getRequestDispatcher("/Task1Quote.jsp");
         dispatcher.forward(request, response);
     }
 
