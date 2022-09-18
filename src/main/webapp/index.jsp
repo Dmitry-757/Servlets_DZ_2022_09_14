@@ -13,6 +13,9 @@
 <a href="Task2MaxDigit">Task 2. Find Max number</a>
 <br>
 <a href="Task3MaxMinAvgDigit">Task 3. Find Max or Min or Avg number</a>
+<br>
+<a href="Task5Calculator">Task 5. Find Max or Min or Avg number</a>
+
 
 </body>
 </html>

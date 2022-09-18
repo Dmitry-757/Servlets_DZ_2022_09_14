@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Max digit</title>
+    <title>Max, min, avg number</title>
 </head>
 <body>
 <h1>Task 3. Find min, max or avg number</h1>
