@@ -16,7 +16,9 @@
 <br>
 <a href="Task4TextAnalyse">Task 4. TextAnalyse</a>
 <br>
-<a href="Task5Calculator">Task 5. Find Max or Min or Avg number</a>
+<a href="Task5Calculator">Task 5. Calculator</a>
+<br>
+<a href="Calculator2">Task 5. Calculator 2</a>
 
 
 </body>

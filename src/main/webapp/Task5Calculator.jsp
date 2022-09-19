@@ -5,7 +5,7 @@
     <title>Task5Calculator</title>
 </head>
 <body>
-<h1>Task 3. Find min, max or avg number</h1>
+<h1>Task 5. Calculator</h1>
 <br>
 
 <a style="font-size: x-large" href="${pageContext.request.contextPath}/index.jsp">main menu</a>
