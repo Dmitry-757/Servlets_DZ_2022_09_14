@@ -63,9 +63,8 @@ public class Task4TextAnalyseServlet extends HttpServlet {
 //            }
 
             StringBuilder sb = new StringBuilder();
-            sb.append("Count of vowels is ");
-
             TextProcessingResult tr = getTextProcessingResult(inputedText,  "[aeoiuяыуаеиоюэ]");
+            sb.append("Count of vowels is ");
             sb.append(tr.getCount());
             sb.append(",  ");
             sb.append(" list of vowels is ");
@@ -74,6 +73,29 @@ public class Task4TextAnalyseServlet extends HttpServlet {
             String result = sb.toString();
             request.setAttribute("inputedText", inputedText);
             request.setAttribute("result1", result);
+
+            //clear string buffer
+            sb.setLength(0);
+            tr = getTextProcessingResult(inputedText,  "[qzwsxdcrfvtgbyhnjmklpйфцчвскмпнртгшлбщдзжх]");
+            sb.append("Count of consonants is ");
+            sb.append(tr.getCount());
+            sb.append(",  ");
+            sb.append(" list of consonants is ");
+            sb.append(tr.symbolList.toString());
+            result = sb.toString();
+            request.setAttribute("result2", result);
+
+            //clear string buffer
+            sb.setLength(0);
+            tr = getTextProcessingResult(inputedText,  "[,.?!-:;]");
+            sb.append("Count of PunctuationMarks is ");
+            sb.append(tr.getCount());
+            sb.append(",  ");
+            sb.append(" list of PunctuationMarks is ");
+            sb.append(tr.symbolList.toString());
+            result = sb.toString();
+            request.setAttribute("result3", result);
+
 
             RequestDispatcher dispatcher = request.getServletContext().getRequestDispatcher("/Task4TextAnalyse.jsp");
             dispatcher.forward(request, response);

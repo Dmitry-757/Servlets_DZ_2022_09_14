@@ -18,8 +18,9 @@
         <input type="text" id="inputedText" name="inputedText">
     </label>
     <br/>
+    <br/>
 
-    <input type="submit" value="do it">
+    <input type="submit" value="process it">
 </form>
 
 <br>
@@ -34,8 +35,40 @@
 %>
 <a>Inputed text [<%= request.getAttribute("inputedText")%>] </a>
 <br>
-<a> is consist of: </a>
+<br>
+
+<a> Vowels: </a>
 <br>
 <a> <%= result%></a>
+<br>
+<br>
+
+<% //String result;
+    if (request.getAttribute("result2") != null) {
+        result = request.getAttribute("result2").toString();
+    } else {
+        result = "";
+    }
+%>
+<a> Consonants: </a>
+<br>
+<a> <%= result%></a>
+<br>
+<br>
+
+<% //String result;
+    if (request.getAttribute("result3") != null) {
+        result = request.getAttribute("result3").toString();
+    } else {
+        result = "";
+    }
+%>
+<a> Punctuation marks: </a>
+<br>
+<a> <%= result%></a>
+<br>
+
+
+
 </body>
 </html>
